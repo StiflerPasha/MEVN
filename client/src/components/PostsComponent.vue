@@ -16,7 +16,7 @@
 				</v-textarea>
 			</v-col>
 			
-			<v-col cols="4" md="2">
+			<v-col cols="4" sm="2">
 				<v-btn outlined
 				       color="grey darken-3"
 				       :disabled="loading"
@@ -32,7 +32,10 @@
 		
 		<v-divider></v-divider>
 		
-		<p class="error" v-if="error">{{ error }}</p>
+		<p class="error"
+		   v-if="error">
+			{{ error }}
+		</p>
 		
 		<v-row class="mt-3">
 			<PostItemComponent v-for="post in posts"
@@ -82,7 +85,6 @@
 		},
 	};
 </script>
-
 
 <style scoped>
 	.container {
